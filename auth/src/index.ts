@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import { app } from "./app";
 
 const start = async () => {
-  console.log("CLIENT: starting up..");
+  console.log("CLIENT: starting up..!");
 
   if (!process.env.JWT_SECRET) {
     throw new Error("Error: JWT secret not defined!");
