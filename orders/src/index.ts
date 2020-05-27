@@ -8,6 +8,8 @@ import { ExpirationCompleteListener } from "./events/listeners/expiration-comple
 import { PaymentCreatedListener } from "./events/listeners/payment-created-listener";
 
 const start = async () => {
+  console.log("ORDERS: Stating up..!");
+
   if (!process.env.JWT_SECRET) {
     throw new Error("Error: JWT secret not defined!");
   }
